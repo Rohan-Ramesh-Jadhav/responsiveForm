@@ -1,0 +1,29 @@
+<hr>
+<h1 class="text-center">Form Group</h1>
+<div class="d-flex m-4 justify-content-center">
+	<form class="w-25 d-flex flex-column align-items-center"
+		[formGroup]="signinForm"
+		(submit)="submitFun()"
+	>
+		<label for="username"
+			class="form-item"
+		>User Name</label>
+		<input type="text"
+			class="form-control"
+			formControlName="userName"
+			id="username"
+		>
+		<label for="password"
+			class="form-item"
+		>Password</label>
+		<input 
+			class="form-control"
+			type="password"
+			id="password"
+			formControlName="password"
+		>
+		<button class="btn btn-success my-2"
+			type="submit" value="submit"
+		>Submit</button>
+	</form>
+</div>
